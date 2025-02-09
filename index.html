@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- DESKTOP NAV -->
+    <nav id="desktop-nav">
+      <div class="logo">
+        <span class="red">R</span>
+        <span class="red">e</span>
+        <span class="red">g</span>
+        <span class="red">i</span>
+        <span class="red">n</span>
+        <span class="red">a</span>
+        <span class="red">l</span>
+        <span class="red">d</span>
+        <span class="space">""</span>
+        <span class="red">J</span>
+        <span class="red">e</span>
+        <span class="red">s</span>
+        <span class="red">s</span>
+        <span class="red">e</span>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+        <!--EXPERIENCE
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER MENU -->
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <span class="red">R</span>
+        <span class="red">e</span>
+        <span class="red">g</span>
+        <span class="red">i</span>
+        <span class="red">n</span>
+        <span class="red">a</span>
+        <span class="red">l</span>
+        <span class="red">d</span>
+        <span class="space">""</span>
+        <span class="red">J</span>
+        <span class="red">e</span>
+        <span class="red">s</span>
+        <span class="red">s</span>
+        <span class="red">e</span>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon " onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <!--EXPERIENCE
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        -->
+
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+      </div>
+    </nav>
+
+
+    <!-- SECTION -->
+     <section id="profile">
+        <div class="section__text">
+          <p class="section__text__p1">
+            Hello, I'm
+          </p>
+          <h1 class="title">
+            <span>R</span>eginald <span> J</span>esse
+          </h1>
+          <p class="section__text__p2">
+            Frontend Developer
+          </p>
+
+          <!--BUTTONS-->
+          <div class="btn-container">
+            <button class="btn btn-color-2"
+            onclick="
+            window.open('./assets/Resume.pdf')
+            ">Download CV
+            </button>
+            <button class="btn btn-color-1"
+            onclick="
+            location.href='./#contacts'
+            ">Contact Info
+            </button>
+          <!--BUTTONS-->
+          
+          </div>
+          <div id="socials-container">
+            <img src="./assets/Git.svg" alt="My LinkedIn" class="icon"
+            onclick="
+            location.href='https://github.com/RedLogic0113'
+            ">
+
+            <img src="./assets/LinkedIn.svg" alt="My Github" class="icon"
+            onclick="
+            location.href='https://www.linkedin.com/in/reginald-jesse-de-guzman-816478294/'
+            ">
+
+            <img src="./assets/Facebook.svg" alt="My LinkedIn" class="icon"
+            onclick="
+            location.href='https://www.facebook.com/reginaldjessedeguzman/'
+            ">
+
+          </div>
+        </div>
+        <div class="section__pic-container">
+          <img src="./assets/Display Pic.png" alt="Reginald-dp" class="profile-pic" />
+        </div>
+     </section>
+
+     <!-- ABOUT SECTION -->
+     <section id="about">
+
+      <h1 class="title">
+        Who is Reginald?
+      </h1>
+
+      <div class="section-container">
+        <div class="section__pic-container-about">
+          <img 
+          src="./assets/about me pic.jpg" alt="about me picture" class="about-pic" 
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>With a background in chemistry, I’ve developed a keen eye for detail and problem-solving. I love combining that with creativity to design engaging visuals that make complex ideas easier to understand. My goal is to continuously grow as a developer and make impactful digital solutions. Let’s build something amazing together!
+            </p>
+          </div>
+          <div class="about-containers">
+        
+            <div class="details-container">
+              <img 
+              src="./assets/Experience.svg" alt="experience icon" class="icon" />
+              <h3>Skills</h3>
+              <div class="skills-container">
+                <article>
+                  <img src="./assets/Check.svg" alt="check icon" class="icon" />
+                  <div>
+                    <h3>
+                      HTML
+                    </h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/Check.svg" alt="check icon" class="icon" />
+                  <div>
+                    <h3>
+                      HTML
+                    </h3>
+                  </div>
+                </article>
+                <article>
+                  <img src="./assets/Check.svg" alt="check icon" class="icon" />
+                  <div>
+                    <h3>
+                     JavaScript
+                    </h3>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <img src="./assets/Education.svg" alt="education icon" class="icon" 
+              />
+              <h3>Education</h3>
+              <p>2019 - 2023 <br> Bachelor of Science in Chemistry</p>
+                            <div class="university-container">
+                <img src="./assets/BU.svg" alt="BU logo" class="icon"/>
+                <span>Bicol university</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.svg" alt="arrow icon" class="icon arrow"/>
+
+
+     </section>
+
+
+
+  </body>
+  <script src="script.js"></script>
+</html>
