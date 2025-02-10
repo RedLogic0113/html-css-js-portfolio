@@ -308,27 +308,26 @@ section {
 }
 
 .details-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
   padding: 1.5rem;
-  flex: 1;
   background: #f4f4f4;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
 }
 .skills-container {
   display: flex;
-  text-align: initial;
   flex-direction: column;
-  gap: 0.5rem;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 auto;
 }
 .skills-container article {
   display: flex;
-  align-items: center;
-  gap: 1rem;
 }
+
 .skills-container .icon {
   width: 30px;
   height: auto;
